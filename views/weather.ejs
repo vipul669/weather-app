@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Result</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>📍 Weather at Coordinates</h2>
+    <div class="weather-card">
+      <p>🌡️ Temperature: <strong><%= weather.main.temp %> °C</strong></p>
+      <p>💧 Humidity: <strong><%= weather.main.humidity %> %</strong></p>
+      <p>🌈 Description: <strong><%= weather.weather[0].description %></strong></p>
+      <p>🗺️ Location: <strong><%= weather.name %></strong></p>
+    </div>
+    <a href="/" class="back-link">🔙 Check Another Location</a>
+  </div>
+</body>
+</html>
